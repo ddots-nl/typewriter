@@ -16,10 +16,10 @@ A simple yet powerful native javascript plugin for a cool typewriter effect.
 - Set at least one text in the widget properties
 
 ## Demo project
-- Todo
+https://typewriter-sandbox.mxapps.io/
 
 ## Issues, suggestions and feature requests
-- Todo
+https://github.com/ddots-nl/typewriter
 
 ## Development and contribution
 
