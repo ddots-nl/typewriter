@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="ddots.typewriter.Typewriter"  pluginWidget="true" needsEntityContext="false" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Typewriter</name>
+    <description>A simple yet powerful native javascript plugin for a cool typewriter effect.</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAjVBMVEUAAAAAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYAVZYdn9dMAAAALnRSTlMA+/cD8RC+JAsH1nShXuvatrFrLR6Yi2M649HGe0o9Nhrn3suphlhVQZMzFoEqE0G9GwAAAf9JREFUWMPt1tlyqkAQBuBm2EV2FBUjuBtN+v0f7xRQHgRnusVK5SrfpVSPTc8/APz5ce4tvaaV+2a17VkB1ozieB1fvok0fLA/66PKqxiHinRE/UeAz0Tycn2uodT8xdvw63r5Cq+NT6BSDjxziWriG1ifSLF0Nj4CSR98AzSLqXcCpGk2EyHkeEA6IicCUoScLZBC5GgOUAJ+gaw/ddPsRcNAVtYV+4edIURgrbut2fIdVPfMfz38W5xCa4Uc4UJjsev/vG7v5ICcSVt/eor8oVnZQ860DZwmuVL3kCLnVNdn0mHXzzydG4Jh1gvE8mv1BiVImzUD1NQXnSW9B82OT6n2fKTMmwAZ1ID0mNrD5iCU9A3eQvUE27z5zPPKVo1BXKDhcSmz5T0EG+AXaJmyRBf/j1yOKgXcnYdNBF73nXGhc95y/eKxNc+EjilQIYFHWT6zVuHEmibf9WDyr2NS6uSTU8tAZWG16Q3zeokzysXK+nUX/sgEcPfyBkplfS8sjuo0farqL1r/PCiisHdAYdCwyKSvsFWlqr/iwLr+NRGDAZqg4smPTGphZ+nroDTDgSW0ytmumY4R+S4QpsT7tSovG9sF2vz5zI1zej4y45gG+6E17h5WOozkTHo5WsBo9q6r187whlus3XdgAe/ZTENDbInE8HTX0eHPL/gHWq0zXH/UG2MAAAAASUVORK5CYII=</icon>
+    <properties>
+        <propertyGroup caption="General"> 
+            <property key="renderMode" type="enumeration" defaultValue="text">
+                <caption>Render mode</caption>
+                <description>How to render the widget as a text element.</description>
+                <enumerationValues>
+                    <enumerationValue key="text">Text</enumerationValue>
+                    <enumerationValue key="p">Paragraph</enumerationValue>
+                    <enumerationValue key="h1">Heading 1</enumerationValue>
+                    <enumerationValue key="h2">Heading 2</enumerationValue>
+                    <enumerationValue key="h3">Heading 3</enumerationValue>
+                    <enumerationValue key="h4">Heading 4</enumerationValue>
+                    <enumerationValue key="h5">Heading 5</enumerationValue>
+                    <enumerationValue key="h6">Heading 6</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="loop" type="boolean" defaultValue="true">
+                <caption>Loop</caption>
+                <description>Whether to keep looping or not.</description>
+            </property>
+            <property key="delay" type="integer" defaultValue="0">
+                <caption>Type speed</caption>
+                <description>The delay between each key when typing, 0 = natural.</description>
+            </property>
+            <property key="deleteSpeed" type="integer" defaultValue="0">
+                <caption>Delete speed</caption>
+                <description>The delay between deleting each character, 0 = natural.</description>
+            </property>
+            <property key="cursor" type="string" defaultValue="|">
+                <caption>Cursor</caption>
+                <description>String value to use as the cursor.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Texts">
+            <property key="textList" type="object" isList="true">
+                <caption>List of texts</caption>
+                <description/>
+                <properties>
+                    <propertyGroup caption="Text object">
+                        <property key="text" type="textTemplate">
+                            <caption>Text</caption>
+                            <description />
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
